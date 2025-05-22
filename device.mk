@@ -12,8 +12,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
-# MiuiCamera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/MiuiCamera.mk)
+# Call the Leica Camera setup
+$(call inherit-product-if-exists, vendor/xiaomi/haydn-miuicamera/products/miuicamera.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
